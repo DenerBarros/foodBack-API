@@ -1,7 +1,12 @@
-const config = require('../../../knexfile');
+const { hash } = require('bcryptjs');
 
-const knex = require('knex');
-
-const connection = knex(config.development);
-
-module.exports = connection;
+exports.seed = async function seed(knex) {
+  await knex('users').insert([
+    {
+      name: 'admin',
+      email: 'admin@email.com',
+      password: await hash('987654', 8),
+      is_admin: true
+    }
+  ]);
+};
