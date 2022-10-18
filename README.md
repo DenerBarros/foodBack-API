@@ -54,6 +54,7 @@ Rode as migrations e o seed
 ```bash
   npm run migrate
   npm run seed
+```
 
 Inicie o servidor
 ```bash
