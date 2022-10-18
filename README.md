@@ -44,18 +44,26 @@ Entre no diretório do projeto
 Instale as dependências
 
 ```bash
-  yarn
+  npm install
 ```
 
-Inicie o servidor
+
+
+Rode as migrations e o seed
 
 ```bash
-  yarn run dev
+  npm run migrate
+  npm run seed
+
+Inicie o servidor
+```bash
+
+  npm run dev
 ```
 
 ### Admin login
 - email: admin@email.com
-- password: 987654
+- password: 123456
 
 O servidor iniciará na porta 3333 - vá para http://localhost:3333
 
